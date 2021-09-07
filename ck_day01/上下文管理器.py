@@ -11,14 +11,8 @@
 # with open() as f:
 #     f.write()
 
-#上下文管理器中有 __enter__ 和 __exit__ 两个方法，以with为例子，__enter__ 方法会在执行 with 后面的语句时执行，一般用来处理操作前的内容。
+# 上下文管理器中有 __enter__ 和 __exit__ 两个方法，以with为例子，__enter__ 方法会在执行 with 后面的语句时执行，一般用来处理操作前的内容。
 # 比如一些创建对象，初始化等；__exit__ 方法会在 with 内的代码执行完毕后执行，一般用来处理一些善后收尾工作，比如文件的关闭，数据库的关闭等
-
-
-
-
-
-
 
 
 #
@@ -49,9 +43,6 @@ class MyOpen(object):
         pass
 
 
-
 with MyOpen("a.txt", "r") as f:
     print(f)
     # print(name)
-
-
